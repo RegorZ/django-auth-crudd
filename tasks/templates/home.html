@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+<h1>home</h1>
+{% block content %}
+    <main class="container py-5">
+        <section class="card card-body">
+            <h1 class="display-1 text-center" >Django Project</h1>
+                    <p>Django es un framework de desarrollo web de alto nivel que fomenta el desarrollo rápido y el diseño limpio y pragmático. Creado inicialmente para gestionar las necesidades de los periodistas en un periódico, Django ha evolucionado para ser uno de los frameworks más populares y robustos del ecosistema de Python. Lo que lo hace excepcional es su enfoque en la reutilización y la "batería incluida": con una gran cantidad de componentes integrados, desde autenticación de usuarios hasta administración de formularios y manejo de bases de datos, todo lo que necesitas para construir aplicaciones web robustas está disponible de inmediato. Además, Django se destaca por su seguridad, incluyendo medidas de protección contra vulnerabilidades comunes como el SQL injection y cross-site scripting (XSS). Su comunidad activa y su documentación exhaustiva facilitan el aprendizaje y la resolución de problemas. Con una arquitectura basada en el patrón de diseño Modelo-Vista-Plantilla (MVT), Django permite una separación clara de la lógica de negocio, la interfaz de usuario y los datos, lo que resulta en aplicaciones escalables y mantenibles. Sin duda, Django es una herramienta poderosa para desarrolladores que buscan construir aplicaciones web complejas y de alto rendimiento en un tiempo récord.</p>
+
+            
+            <div class="text-center">
+                <a class="btn btn-primary"  href="{% url 'signin' %}">
+                    Signin
+                </a>
+                <a class="btn btn-primary"  href="{% url 'signup' %}">
+                    Signup
+                </a>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}
